@@ -1,0 +1,28 @@
+/*
+  Color
+*/
+$color-primary: #ff5777;
+$color-white: #fff;
+$color-black: #000;
+
+.text {
+  color: $col;
+}
+
+/*
+  
+*/
+@mixin large-text {
+  color: #fff;
+}
+
+.page-title {
+  @include large-text;
+}
+
+@function grid-width($n) {
+  @return $n * 100px;
+}
+#sidebar {
+  width: grid-width(2)
+}
